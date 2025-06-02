@@ -64,7 +64,8 @@ namespace DataAccess.Concrete.InMemory
             productToUpdate.ProductName = product.ProductName; //Ürünün adını güncelle
             productToUpdate.CategoryId = product.CategoryId; //Ürünün kategorisini güncelle
             productToUpdate.UnitPrice = product.UnitPrice; //Ürünün fiyatını güncelle
-            productToUpdate.UnitsInStock = product.UnitsInStock; //Ürünün stok miktarını güncelle
+            productToUpdate.UnitsInStock = product.UnitsInStock; //Ürünün stok miktarını 
+
         }
     }
 }

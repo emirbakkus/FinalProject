@@ -22,8 +22,7 @@ namespace Business.Concrete
         public List<Product> GetAll()
         {
             //İş kodları burada olacak.
-            //Yetkisi var mı?
-
+            //Yetkisi var mı
             return _productDal.GetAll();
         }
     }
