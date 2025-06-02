@@ -16,10 +16,10 @@ namespace DataAccess.Concrete.InMemory
             // Oracle ,Sql Server ,PostgreSQL , MongoDb gibi veritabanı sistemlerinde bu işlemler yapılır.
             _products = new List<Product> { 
               new Product{ProductId=1, CategoryId=1, ProductName="Bardak", UnitsInStock=15, UnitPrice=15},
-              new Product{ProductId=2, CategoryId=2, ProductName="Kamera", UnitsInStock=500, UnitPrice=3},
-              new Product{ProductId=3, CategoryId=2, ProductName="Telefon", UnitsInStock=1500, UnitPrice=2},
-              new Product{ProductId=4, CategoryId=2, ProductName="Klavye", UnitsInStock=150, UnitPrice=65},
-              new Product{ProductId=5, CategoryId=2, ProductName="Fare", UnitsInStock=85, UnitPrice=1},
+              new Product{ProductId=2, CategoryId=2, ProductName="Kamera", UnitsInStock=3, UnitPrice=500},
+              new Product{ProductId=3, CategoryId=2, ProductName="Telefon", UnitsInStock=2, UnitPrice=1500},
+              new Product{ProductId=4, CategoryId=2, ProductName="Klavye", UnitsInStock = 65, UnitPrice =150},
+              new Product{ProductId=5, CategoryId=2, ProductName="Fare", UnitsInStock = 1, UnitPrice =85},
             };
         }
         public void Add(Product product)
