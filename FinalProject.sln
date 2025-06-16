@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
+VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6C940B38-65FC-4015-9995-A365D3F2B72B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{1EB17764-FD27-4837-A884-F52E2A6539DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{62E1DDDE-00EC-4CD9-87CC-6CAB1A749969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{6E84FD79-FFCD-4837-A496-8CD6F852B00D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{62E1DDDE-00EC-4CD9-87CC-6CAB1A749969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E1DDDE-00EC-4CD9-87CC-6CAB1A749969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E1DDDE-00EC-4CD9-87CC-6CAB1A749969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E84FD79-FFCD-4837-A496-8CD6F852B00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E84FD79-FFCD-4837-A496-8CD6F852B00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E84FD79-FFCD-4837-A496-8CD6F852B00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E84FD79-FFCD-4837-A496-8CD6F852B00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
