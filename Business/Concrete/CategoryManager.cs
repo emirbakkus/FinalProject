@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -16,17 +17,17 @@ namespace Business.Concrete
         {
             _categoryDal = categoryDal; //Bağımlılığı constructor ile veriyoruz
         }
-        public List<Category> GetAll()
+        public IDataResult<List<Category>> GetAll()
         {
             // İş kodları burada yer alacak.
-            return _categoryDal.GetAll(); //DataAccess katmanındaki GetAll metodunu çağırıyoruz.
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll()); //DataAccess katmanındaki GetAll metodunu çağırıyoruz.
 
         }
 
         // Select * from Categories where CategoryId = 1 
-        public Category GetById(int categoryId)
+        public IDataResult<Category> GetById(int categoryId)
         {
-            return _categoryDal.Get(c => c.CategoryId == categoryId); //DataAccess katmanındaki Get metodunu çağırıyoruz.
+            return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == categoryId)); //DataAccess katmanındaki Get metodunu çağırıyoruz.
         }
     }
 }

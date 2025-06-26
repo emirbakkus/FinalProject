@@ -10,6 +10,7 @@ namespace Business.ValidationRules.FluentValidation
 {
     public class ProductValidator : AbstractValidator<Product>
     {
+        //validation = doğrulama
         public ProductValidator()
         {
             RuleFor(p => p.ProductName).NotEmpty();
@@ -17,8 +18,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.UnitPrice).NotEmpty();
             RuleFor(p => p.UnitPrice).GreaterThan(0);
             RuleFor(P => P.UnitPrice).GreaterThanOrEqualTo(10).When(p => p.CategoryId == 1); // Örnek: CategoryId'si 1 olan ürünlerin fiyatı 10'dan büyük veya eşit olmalıdır.
-            RuleFor(p =>p.ProductName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı"); // Örnek: Ürün adı "A" harfi ile başlamalıdır.
-
+            RuleFor(p => p.ProductName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı"); // Örnek: Ürün adı "A" harfi ile başlamalıdır.
 
         }
 

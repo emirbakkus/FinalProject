@@ -17,7 +17,10 @@ namespace Business.Abstract
         IDataResult<List<ProductDetailDto>> GetProductDetails(); // Ürün detaylarını listeleme metodu
         IDataResult<Product> GetById(int ProductId);
         IResult Add(Product product);
-        
+        IResult Update(Product product);
+
+        //Restful servislerdeki gibi HTTP metodları ile isimlendirme yapıldı.
+
     }
 
 }
