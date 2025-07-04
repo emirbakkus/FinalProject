@@ -27,6 +27,8 @@ namespace WebAPI.Controllers
             //Swagger -- API dokümantasyonu için kullanılır.
             //Dependency Chains -- Bağımlılık Zinciri
 
+            Thread.Sleep(1000); // 1 saniye bekletme işlemi, örnek olarak kullanıldı.
+
             var result = _productService.GetAll();
             if (result.Success)
             {
@@ -40,6 +42,17 @@ namespace WebAPI.Controllers
         public IActionResult GetById(int id)
         {
             var result = _productService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getbycategory")]
+        public IActionResult GetByCategory(int categoryId)
+        {
+            var result = _productService.GetAllByCategoryId(categoryId);
             if (result.Success)
             {
                 return Ok(result);
