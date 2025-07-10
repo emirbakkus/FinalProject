@@ -34,7 +34,7 @@ namespace Business.Concrete
         }
 
         //Claim
-        //[SecuredOperation("product.add,admin")]  //Yetki kontrolü yapılıyor.
+        [SecuredOperation("product.add,admin")]  //Yetki kontrolü yapılıyor.
         [ValidationAspect(typeof(ProductValidator))] //Attribute kullanarak doğrulama işlemi yapılıyor.
         [CacheRemoveAspect("IProductService.Get")] //Cache'den silme işlemi yapılıyor.
         public IResult Add(Product product)
